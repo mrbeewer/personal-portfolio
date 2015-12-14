@@ -1,9 +1,9 @@
-class ApplicationController < Sinatra::base
+class ApplicationController < Sinatra::Base
 
   require "bundler"
   Bundler.require
 
-  ActiveRecord::Base.establish_connectino(
+  ActiveRecord::Base.establish_connection(
     :adapter => "postgresql",
     :database => "" # TODO: database?
   )

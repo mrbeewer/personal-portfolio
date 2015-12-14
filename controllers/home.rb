@@ -2,7 +2,7 @@ class HomeController < ApplicationController
 
 # home page
 get "/" do
-  erb :login
+  erb :'portfolio-home', :layout => :'portfolio-layout'
 end
 
 
